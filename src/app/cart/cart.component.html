@@ -1,0 +1,6 @@
+  <td>{{item.id}}</td>
+  <td>{{item.name}}</td>
+  <td> <input type="number" [(ngModel)]="item.qty" class="form-control modify" #qtyinput> <span class="ok" #qty>{{item.qty}}</span></td>
+  <td>{{item.price}}</td>
+  <td ><button class="btn btn-info" (click)="changeQty()" #btn>Modify</button></td>
+  <td><button class="btn btn-danger" (click)="removeMe()" >Remove</button></td>
